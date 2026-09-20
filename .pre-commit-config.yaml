@@ -1,0 +1,13 @@
+exclude: '.git'
+default_stages: [pre-commit]
+fail_fast: false
+
+repos:
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.9.7
+  hooks:
+    - id: ruff
+      types_or: [ python, pyi ]
+      args: [ --fix ]
+    - id: ruff-format
+      types_or: [ python, pyi ]

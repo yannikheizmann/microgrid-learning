@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
+/data/models/
+/data/tracking/
+/data/testing/
+/data/evaluation/
+/wandb/
+/dist/
