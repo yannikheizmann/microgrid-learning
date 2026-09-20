@@ -22,7 +22,9 @@ class SB3_DQNAgent(ISB3Agent):
         exploration_final_eps: float,
         exploration_fraction: float,
         target_update_interval: int,
+        memory_size: int = 10000,
     ):
+        self._memory_size = memory_size
         self._gamma = gamma
         self._exploration_initial_eps = exploration_initial_eps
         self._exploration_final_eps = exploration_final_eps
@@ -37,6 +39,7 @@ class SB3_DQNAgent(ISB3Agent):
             env=self._environment,
             learning_rate=self._learning_rate,
             batch_size=self._batch_size,
+            buffer_size=self._memory_size,
             gamma=self._gamma,
             target_update_interval=self._target_update_interval,
             verbose=1,
