@@ -64,6 +64,7 @@ class BuyToChargeAction(IAction):
         return cls(battery_priority=battery_priority, amount=amount)
 
     def to_action_space(self) -> int:
-        # TODO get action (int) from instance attributes
-        # Inverse of from_action_space
-        pass
+        priorities = list(permutations(BatteryType, len(BatteryType)))
+        return priorities.index(tuple(self.battery_priority)) * len(ChargeAmount) + list(ChargeAmount).index(
+            self.amount
+        )
