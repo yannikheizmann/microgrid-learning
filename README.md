@@ -2,8 +2,6 @@
 
 A Python framework for simulating a microgrid and training reinforcement learning agents to control battery storage, electricity purchases, and energy sales. It includes a Gymnasium environment, configurable components and rewards, rule-based baselines, and custom and Stable-Baselines3 DQN agents.
 
-This is a cleaned continuation of our [original bachelor project, RL Microgrid](https://github.com/yaHzm/rlmicrogrid), imported from commit `121cbf17646a0119f842eedc9336c2abcc18f5f3`. The original repository preserves the project history, diagrams, legacy implementation, and experiment results.
-
 ## Setup
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run these commands from the repository root. Python 3.12 is required; uv can install it automatically.
@@ -58,10 +56,10 @@ Tests use temporary output directories and include actual gradient updates. They
 - [Component defaults](src/rl_microgrid/config/configuration/microgrid/_microgrid.py)
 - [Input datasets](data/README.md)
 
-Agents, rewards, brains, and microgrid factories are selected through the registry and configuration options. The source guides retain links to diagrams in the original repository.
+Agents, rewards, brains, and microgrid factories are selected through the registry and configuration options.
 
 ## Credits
 
 Originally developed by Bennet Märtin, Joshua Ruf, Markus Portugall, Nick Abermeth, and Yannik Heizmann as a bachelor project. Author metadata is preserved in `pyproject.toml`.
 
-The original README stated MIT licensing, but the imported snapshot contained no LICENSE file. This cleanup does not introduce a new license grant.
+No LICENSE file is currently included.

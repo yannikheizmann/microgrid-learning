@@ -46,11 +46,6 @@ To keep the framework not only as easy to extend, but also as easy to instantiat
 ## **Registry [>](./registry/)**  
 The first pattern used is the [Registry-Pattern](https://www.geeksforgeeks.org/registry-pattern/), a pattern generally used to simplify the access to objects or instances throughout the whole application.      
 
-<div style="height:400px; transform: scale(0.9); transform-origin: top;">
-  <a href="#patterns.registry">
-    <img src="https://github.com/yaHzm/rlmicrogrid/blob/121cbf17646a0119f842eedc9336c2abcc18f5f3/docs/svg/patterns.registry.svg" alt="patterns.registry" style="vertical-align: top;">
-  </a>
-</div>
 
 The motivation to apply this pattern was to keep the configuration as simple as possible and allow the user to specify which components (with "components" referring to the key interchangeable parts of this framework that will be mentioned later) to use within the run-command. To not having to keep a dictionary updated that maps some string to be passed by the user to the respective class to be instantiated, the Registry-Pattern has been applied for the respective components to be registered automatically on definition and made accessible via the name of their respective class.   
 
@@ -68,11 +63,6 @@ This means, each of the respective interfaces ([`IAgent`](../reinforcement_learn
 ## **Factory [>](./factory/)**  
 The second pattern applied is the [Factory-Pattern](https://www.geeksforgeeks.org/factory-method-for-designing-pattern/), a creational pattern generally used to take over the initialization of "products" by using factories.     
 
-<div style="height:200px; transform: scale(0.9); transform-origin: top;">
-  <a href="#patterns.factory">
-    <img src="https://github.com/yaHzm/rlmicrogrid/blob/121cbf17646a0119f842eedc9336c2abcc18f5f3/docs/svg/patterns.factory.svg" alt="patterns.factory" style="vertical-align: top;">
-  </a>
-</div>
 
 The motivation to use this pattern was to keep the entry point to this framework as well as the concrete components free of initialization logic and extract it into a separate class. It also provides a common package to change the initialization of the application without the need to go through all packages of the framework and change the initialization.    
 

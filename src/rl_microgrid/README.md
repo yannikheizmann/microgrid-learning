@@ -48,13 +48,7 @@
 
 # **☐ Structure**
 This project provides a framework to run different Reinforcement Learning (**RL**) algorithms to learn the management of a microgrid. The key components/ parts of the framework will be described in the following.     
-<span style="color: grey; font-size: 11px;">(For a quick overview over the existing classes, please refer to this [UML ▷](https://github.com/yaHzm/rlmicrogrid/blob/121cbf17646a0119f842eedc9336c2abcc18f5f3/docs/uml.md))</span>
 
-<div style="height: 400px; transform: scale(0.9); transform-origin: top;">
-  <a href="#structure">
-    <img src="https://github.com/yaHzm/rlmicrogrid/blob/121cbf17646a0119f842eedc9336c2abcc18f5f3/docs/svg/structure.svg" alt="structure" style="vertical-align: top;">
-  </a>
-</div>
 
 > # **TL;DR**   
 > There are three key parts:
@@ -172,11 +166,6 @@ The possibilities to extend the existing framework for further development will 
 <span style="color: grey; font-size: 11px;">(For an introduction into the applied patterns, please refer to the [Pattern-Guide ▷](./config/README.md#applied-patterns))</span>
 
 
-<div style="height: 400px; transform: scale(0.9); transform-origin: top;">
-  <a href="#extension">
-    <img src="https://github.com/yaHzm/rlmicrogrid/blob/121cbf17646a0119f842eedc9336c2abcc18f5f3/docs/svg/extension.svg" alt="extension" style="vertical-align: top;">
-  </a>
-</div>
 
 
 > # **TL;DR**   
