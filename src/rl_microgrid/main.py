@@ -32,15 +32,18 @@ class Main:
     def run(cls) -> None:
         args = ArgsParser.parse()
         agent = cls.instantiate(args)
-        tracker = Tracker(PROJECT_NAME, args)
         if args.mode == "train":
-            args.call(
-                agent.train,
-                n_episodes=args.episodes,
-                output_path=args.output_path,
-                tracker=tracker,
-            )
-            args.save()
+            tracker = Tracker(PROJECT_NAME, args)
+            try:
+                args.call(
+                    agent.train,
+                    n_episodes=args.episodes,
+                    output_path=args.output_path,
+                    tracker=tracker,
+                )
+                args.save()
+            finally:
+                tracker.finish()
         else:
             args.call(
                 agent.test,
@@ -48,7 +51,6 @@ class Main:
                 input_model_path=args.input_model_path,
                 run_name=args.run_name,
             )
-        tracker.finish()
 
 
 if __name__ == "__main__":
