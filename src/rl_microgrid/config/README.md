@@ -48,7 +48,7 @@ The first pattern used is the [Registry-Pattern](https://www.geeksforgeeks.org/r
 
 <div style="height:400px; transform: scale(0.9); transform-origin: top;">
   <a href="#patterns.registry">
-    <img src="../../../docs/svg/patterns.registry.svg" alt="patterns.registry" style="vertical-align: top;">
+    <img src="https://github.com/yaHzm/rlmicrogrid/blob/121cbf17646a0119f842eedc9336c2abcc18f5f3/docs/svg/patterns.registry.svg" alt="patterns.registry" style="vertical-align: top;">
   </a>
 </div>
 
@@ -70,7 +70,7 @@ The second pattern applied is the [Factory-Pattern](https://www.geeksforgeeks.or
 
 <div style="height:200px; transform: scale(0.9); transform-origin: top;">
   <a href="#patterns.factory">
-    <img src="../../../docs/svg/patterns.factory.svg" alt="patterns.factory" style="vertical-align: top;">
+    <img src="https://github.com/yaHzm/rlmicrogrid/blob/121cbf17646a0119f842eedc9336c2abcc18f5f3/docs/svg/patterns.factory.svg" alt="patterns.factory" style="vertical-align: top;">
   </a>
 </div>
 
